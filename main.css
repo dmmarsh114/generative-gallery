@@ -11,8 +11,8 @@ body {
 
 .iframe-container {
     position: relative;
-    padding-top: 56.25%;
-    /* height: 0; */
+    height: 0;
+    /* padding-bottom: 56.25%; */
     overflow: hidden;
 }
 
@@ -25,12 +25,91 @@ body {
     border: 0;
 }
 
-/* .square {
-    padding-top: 100%;
-} */
+.inlineSketch {
+    display: flex;
+    justify-content: center;
+}
 
+.desc {
+    text-align: center;
+    padding: 10px;
+}
 
-#phylloSketch {
+/* =============================== */
+
+.solSys {
+    width: 100%;
+    background-color: lightblue;
+}
+
+.solSysSketch {
+    width: 800px;
+    height: 450px;
+    border: thick solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.solSysDesc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* =============================== */
+
+.phylloSketch {
+    width: 500px;
+    height: 500px;
+    border: thick solid red;
     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phyllotaxis {
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.phylloDesc {
+
+}
+
+/* =============================== */
+
+.fractalTree {
+    background-color: lightpink;
     border: thick solid green;
-} 
+}
+
+.fractalTreeSketch {
+    width: 400px;
+    height: 450px;
+    border: thick solid red;
+    background: transparent;
+    right: 0;
+}
+
+.fractalTreeDesc {
+    display: inline;
+}
+
+/* =============================== */
+
+.phyllotiles {
+    width: 100%;
+    background-color: teal;
+    padding-bottom: 10px;
+}
+
+.phyllotilesSketch {
+    width: 800px;
+    height: 450px;
+    border: thick solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phyllotilesDesc {
+
+}

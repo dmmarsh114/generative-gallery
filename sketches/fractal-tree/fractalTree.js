@@ -57,7 +57,7 @@ function grow() {
 }
 
 function draw() {
-  background('white');
+  background(0, 0, 0, 0); // transparent background
   // create circular mask for canvas
   fill('black');
   ellipseMode(CENTER);

@@ -21,12 +21,14 @@
         </p>
     </section>
 
+
     <!-- ==== SOLAR SYSTEM ==== -->
-    <section class=''>
-        <div class='iframe-container'>
-            <iframe src="./sketches/solar-system/solSys.html" overflow='hidden' scrolling='no' allowfullscreen></iframe>
+    <section class='solSys'>
+        <div class='solSysSketch iframe-container'>
+            <iframe src="./sketches/solar-system/solSys.html" overflow='hidden' scrolling='no' allowfullscreen
+                name='solar system'></iframe>
         </div>
-        <div class='solDesc artDesc'>
+        <div class='solSysDesc'>
             <h3>Solar System Model</h3>
             <p>
                 I taught myself js classes and constructors with this
@@ -44,12 +46,14 @@
     </section>
 
     <!-- ==== PHYLLOTAXIS ==== -->
-    <section class=''>
-        <div class='iframe-container square'>
-            <iframe id='phylloSketch' src="./sketches/phyllotaxis/phyllo.html" width='600' height='600'
-                overflow='hidden' scrolling='no' title='phyllotaxis'></iframe>
-        </div>
+    <section class='phyllotaxis inlineSketch'>
         <div>
+            <div class='phylloSketch iframe-container'>
+                <iframe src="./sketches/phyllotaxis/phyllo.html" overflow='hidden' scrolling='no' allowfullscreen
+                    name='phyllotaxis'></iframe>
+            </div>
+        </div>
+        <div class='phylloDesc desc'>
             <h3>Phyllotaxis</h3>
             <p>
                 link to coding train video
@@ -67,12 +71,8 @@
     </section>
 
     <!-- ==== FRACTAL TREE ==== -->
-    <section class=''>
-        <div class='iframe-container'>
-            <iframe src="./sketches/fractal-tree/fractalTree.html" width='400' height='450' overflow='hidden'
-                scrolling='no' title='fractal tree'></iframe>
-        </div>
-        <div>
+    <section class='fractalTree inlineSketch'>
+        <div class='fractalTreeDesc desc'>
             <h3>Fractal Tree 1</h3>
             <p>
                 link to coding train video
@@ -88,15 +88,17 @@
                 architecto.
             </p>
         </div>
+        <div>
+            <div class='fractalTreeSketch iframe-container'>
+                <iframe src="./sketches/fractal-tree/fractalTree.html" overflow='hidden' scrolling='no' allowfullscreen
+                    name='fractal tree'></iframe>
+            </div>
+        </div>
     </section>
 
     <!-- ==== PHYLLOTILES ==== -->
-    <section class=''>
-        <div class='iframe-container'>
-            <iframe src='./sketches/phyllotiles/phyllotiles.html' overflow='hidden' scrolling='no' allowfullscreen>
-            </iframe>
-        </div>
-        <div>
+    <section class='phyllotiles'>
+        <div class='phyllotilesDesc desc'>
             <h3>Phyllotiles</h3>
             <p>
                 what fascinates me about the code is how subtle change in angle makes wildly different patterns
@@ -105,6 +107,11 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum ducimus maxime aspernatur soluta natus
                 quidem ratione enim voluptatem aliquam voluptas?
             </p>
+        </div>
+        <div class='phyllotilesSketch iframe-container'>
+            <iframe src='./sketches/phyllotiles/phyllotiles.html' overflow='hidden' scrolling='no' allowfullscreen
+                name='phyllotiles'>
+            </iframe>
         </div>
     </section>
 
