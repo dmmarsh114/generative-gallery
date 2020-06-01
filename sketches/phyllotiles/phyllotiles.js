@@ -17,9 +17,9 @@ function setup() {
     canvas.parent(document.getElementById('artContainer'));
 
 
-    // let button = createButton('draw again');
-    // button.parent(document.getElementById('button'));
-    // button.mousePressed(resetSketch);
+    let button = createButton('draw again');
+    button.parent(document.getElementById('button'));
+    button.mousePressed(resetSketch);
 }
 
 function resetSketch() {

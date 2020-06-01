@@ -37,8 +37,8 @@ function grow() {
     // add two branches off of each branch
     for (let i = tree.length - 1; i >= 0; i--) {
       if (!tree[i].grown) {
-        tree.push(tree[i].newBranch(PI / random(3, 10)));
-        tree.push(tree[i].newBranch(-PI / random(3, 10)));
+        tree.push(tree[i].newBranch(PI / random(5, 10)));
+        tree.push(tree[i].newBranch(-PI / random(5, 10)));
       }
       tree[i].grown = true;
     }
@@ -72,8 +72,9 @@ function draw() {
 
   // display leaves
   for (let i = 0; i < leaves.length; i++) {
-    fill(255, 0, 100, 100);
-    strokeWeight(1);
+    colorMode(HSB);
+    noStroke();
+    fill(90, 100, 80, 0.7);
     ellipse(leaves[i].x, leaves[i].y, 12, 12);
   }
 

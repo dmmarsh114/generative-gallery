@@ -35,6 +35,20 @@ body {
     padding: 10px;
 }
 
+.aspect16 {
+    width: 800px;
+    height: 450px;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sketch {
+    border: thick solid red;
+}
+
 /* =============================== */
 
 .solSys {
@@ -43,11 +57,7 @@ body {
 }
 
 .solSysSketch {
-    width: 800px;
-    height: 450px;
-    border: thick solid red;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 .solSysDesc {
@@ -60,7 +70,6 @@ body {
 .phylloSketch {
     width: 500px;
     height: 500px;
-    border: thick solid red;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -85,7 +94,6 @@ body {
 .fractalTreeSketch {
     width: 400px;
     height: 450px;
-    border: thick solid red;
     background: transparent;
     right: 0;
 }
@@ -103,13 +111,23 @@ body {
 }
 
 .phyllotilesSketch {
-    width: 800px;
-    height: 450px;
-    border: thick solid red;
-    margin-left: auto;
-    margin-right: auto;
+    height: 472px;
 }
 
 .phyllotilesDesc {
 
+}
+
+/* =============================== */
+
+.tiles {
+
+}
+
+.tilesDesc {
+
+}
+
+.tileSketch {
+    height: 472px;
 }
