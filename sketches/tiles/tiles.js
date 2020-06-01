@@ -3,11 +3,11 @@ let x = 0;
 let y = 0;
 
 function setup() {
-    let canvas = createCanvas(800, 450);
+    let canvas = createCanvas(500, 500);
     canvas.parent(document.getElementById('artContainer'));
     frameRate(10);
 
-    let button = createButton('draw again');
+    let button = createButton('reset');
     button.parent(document.getElementById('button'));
     button.mousePressed(resetSketch);
 

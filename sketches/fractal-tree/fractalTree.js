@@ -59,7 +59,7 @@ function grow() {
 function draw() {
   background(0, 0, 0, 0); // transparent background
   // create circular mask for canvas
-  fill('black');
+  fill(255, 253, 208);
   ellipseMode(CENTER);
   ellipse(width / 2, height / 2, width, height);
 
@@ -72,10 +72,9 @@ function draw() {
 
   // display leaves
   for (let i = 0; i < leaves.length; i++) {
-    colorMode(HSB);
     noStroke();
-    fill(90, 100, 80, 0.7);
-    ellipse(leaves[i].x, leaves[i].y, 12, 12);
+    fill(28, 92, 28, 200);
+    ellipse(leaves[i].x, leaves[i].y, 12);
   }
 
   if (count === 5) {
