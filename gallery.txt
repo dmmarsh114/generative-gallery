@@ -1,0 +1,24 @@
+GALLERY
+I've recently become fascinated with {generative art} -- that is, making art with code. Below are some the pieces that I've made as I explore this new facet of code.
+
+These were all made solely throught Javascript, thanks to incredibly user-friendly {p5js library}. 
+
+SOLAR SYSTEM
+This project was a great tutorial in Javascript classes, a concept that I had previously had no experience with. Each object in the solar system here belongs to a Planet class. The Planet class functions as a template that allows me to quickly create a variety of celestial bodies, just by changing their size, distance, and orbital speed. 
+I intend to use this code to eventually build an interactive solar system designer, where users can create their own start systems (loosley) based on real orbital mechanics. 
+
+FRACTAL TREE
+The initial prototype for this project used recursion, but I followed {this tutorial} to use Javascript classes instead. Using classes in this way gave me more control over animating the tree's growth and appearance. 
+
+DISTORTION TILES
+One common technique found in generative art is the use of tiles. A programmer can divvy the canvas into a rows of tiles, each of which be manipulated independently. Tiling can lead to all kinds of trippy designs and patterns.
+In the design above, I programmed each tile to contain a series of squares. The rotation of the squares within the tiles is tied to the x and y axis of the tile's position, which causes the tiles to gradually become more and more distorted each time they are drawn. 
+In the design to the left, the program randomly determines what shape to draw in each tile. Each tile has a 70% chance to draw a series of squares, and a 30% chance to draw circles instead. The coloration of each shape is determined by its position relative to the rest of the canvas. 
+
+PHYLLOTAXIS
+This piece was made following this {excellent tutorial}. 
+The program uses a mathematical formula found in nature to create this spiral pattern, known as /{phyllotaxis}/. Phyllotaxis can be seen in sunflower petals, in the leaves of succulents. 
+Plants fascinate me to no end, and the ability to mathematically mimic their beauty through code is one of the coolest things ever. 
+
+PHYLLOTILES
+Here I combine the two techniques above to further show off the diversity of the phyllotaxis formula. Each spiral is drawn with the same code, but an element of randomness slightly changes the phyllotaxis formula. Simply changing the angle at which the spirals are drawn by a fraction of a degree will create wildly different patterns. 

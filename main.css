@@ -56,12 +56,13 @@ body {
 }
 
 .sketch {
-    border: thick solid red;
+
 }
 
 .image {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin-bottom: 100px;
 }
 
 img {
@@ -73,7 +74,6 @@ img {
 
 .solSys {
     width: 100%;
-    background-color: lightblue;
 }
 
 .solSysSketch {
@@ -97,7 +97,7 @@ img {
 
 .phyllotaxis {
     width: 100%;
-    background-color: lightcoral;
+    margin-top: 100px;
 }
 
 .phylloDesc {
@@ -107,8 +107,7 @@ img {
 /* =============================== */
 
 .fractalTree {
-    background-color: lightpink;
-    border: thick solid green;
+    margin-top: 100px;
 }
 
 .fractalTreeSketch {
@@ -126,8 +125,8 @@ img {
 
 .phyllotiles {
     width: 100%;
-    background-color: teal;
     padding-bottom: 10px;
+    margin-top: 100px;
 }
 
 .phyllotilesSketch {
@@ -141,7 +140,7 @@ img {
 /* =============================== */
 
 .tiles {
-
+    margin-top: 50px;
 }
 
 .tilesDesc {
