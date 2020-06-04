@@ -37,8 +37,8 @@ function grow() {
     // add two branches off of each branch
     for (let i = tree.length - 1; i >= 0; i--) {
       if (!tree[i].grown) {
-        tree.push(tree[i].newBranch(PI / random(3, 10)));
-        tree.push(tree[i].newBranch(-PI / random(3, 10)));
+        tree.push(tree[i].newBranch(PI / random(5, 10)));
+        tree.push(tree[i].newBranch(-PI / random(5, 10)));
       }
       tree[i].grown = true;
     }
@@ -57,9 +57,9 @@ function grow() {
 }
 
 function draw() {
-  background('white');
+  background(0, 0, 0, 0); // transparent background
   // create circular mask for canvas
-  fill('black');
+  fill(255, 253, 208);
   ellipseMode(CENTER);
   ellipse(width / 2, height / 2, width, height);
 
@@ -72,9 +72,9 @@ function draw() {
 
   // display leaves
   for (let i = 0; i < leaves.length; i++) {
-    fill(255, 0, 100, 100);
-    strokeWeight(1);
-    ellipse(leaves[i].x, leaves[i].y, 12, 12);
+    noStroke();
+    fill(28, 92, 28, 200);
+    ellipse(leaves[i].x, leaves[i].y, 12);
   }
 
   if (count === 5) {

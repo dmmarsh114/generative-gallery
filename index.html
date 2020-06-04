@@ -11,100 +11,140 @@
 <body>
 
     <section class='title'>
-        <h2>P5.js Gallery</h2>
+        <h2>p5js Gallery</h2>
+        <h4>by Daniel Marsh</h4>
         <p>
-            these are done with code
-        </p>
-        <p>Here are some of the sketches that I have made using the <a href='https://p5js.org/'>p5.js library.</a></p>
+            I've recently become fascinated with <a
+                href="https://www.freecodecamp.org/news/an-introduction-to-generative-art-what-it-is-and-how-you-make-it-b0b363b50a70/">generative
+                art</a> -- that is, making art with code. Below
+            are some
+            the pieces that I've made as I explore this new facet of code. </p>
         <p>
-            i'm still working on these
+            These were all made solely throught Javascript, thanks to incredibly user-friendly <a
+                href='https://p5js.org/'>p5.js library</a>.
         </p>
+
     </section>
+
 
     <!-- ==== SOLAR SYSTEM ==== -->
-    <section class=''>
-        <div class='iframe-container'>
-            <iframe src="./sketches/solar-system/solSys.html" overflow='hidden' scrolling='no' allowfullscreen></iframe>
+    <section class='solSys'>
+        <div class='solSysSketch aspect16 centered sketch iframe-container'>
+            <iframe src="./sketches/solar-system/solSys.html" overflow='hidden' scrolling='no' allowfullscreen
+                name='solar system'></iframe>
         </div>
-        <div class='solDesc artDesc'>
+        <div class='solSysDesc'>
             <h3>Solar System Model</h3>
             <p>
-                I taught myself js classes and constructors with this
+                This project was a great tutorial in Javascript classes, a concept that I had previously had no
+                experience with. Each
+                object in the solar system here belongs to a Planet class. The Planet class functions as a template that
+                allows me to
+                quickly create a variety of celestial bodies, just by changing their size, distance, and orbital speed.
             </p>
             <p>
-                currently working on a solar system builder
-            </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore amet quidem sequi ullam quis
-                veniam
-                error, sapiente quas! Veritatis sint officiis rerum non itaque repudiandae voluptates cupiditate ipsum
-                architecto.
-            </p>
-        </div>
-    </section>
-
-    <!-- ==== PHYLLOTAXIS ==== -->
-    <section class=''>
-        <div class='iframe-container square'>
-            <iframe id='phylloSketch' src="./sketches/phyllotaxis/phyllo.html" width='600' height='600'
-                overflow='hidden' scrolling='no' title='phyllotaxis'></iframe>
-        </div>
-        <div>
-            <h3>Phyllotaxis</h3>
-            <p>
-                link to coding train video
-            </p>
-            <p>
-                fascinated by plants, this uses plant geometry
-            </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore amet quidem sequi ullam quis
-                veniam
-                error, sapiente quas! Veritatis sint officiis rerum non itaque repudiandae voluptates cupiditate ipsum
-                architecto.
+                I intend to use this code to eventually build an interactive solar system designer, where users can
+                create their own
+                start systems (loosley) based on real orbital mechanics.
             </p>
         </div>
     </section>
 
     <!-- ==== FRACTAL TREE ==== -->
-    <section class=''>
-        <div class='iframe-container'>
-            <iframe src="./sketches/fractal-tree/fractalTree.html" width='400' height='450' overflow='hidden'
-                scrolling='no' title='fractal tree'></iframe>
-        </div>
-        <div>
+    <!-- <section class='fractalTree inlineSketch'>
+        <div class='fractalTreeDesc desc'>
             <h3>Fractal Tree 1</h3>
             <p>
-                link to coding train video
+                The initial prototype for this project used recursion, but I followed <a
+                    href="https://www.youtube.com/watch?v=fcdNSZ9IzJM">this tutorial</a> to use Javascript
+                classes instead.
             </p>
             <p>
-                the initial project was a great lesson in recursion, but it became a lesson in classes as i learned how
-                to animate the growing
+                Using classes in this way gave me more control over animating the tree's growth and appearance.
+            </p>
+        </div>
+        <div>
+            <div class='fractalTreeSketch sketch iframe-container'>
+                <iframe src="./sketches/fractal-tree/fractalTree.html" overflow='hidden' scrolling='no' allowfullscreen
+                    name='fractal tree'></iframe>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ==== TILE STUDY ==== -->
+    <section class='tiles'>
+        <div class='aspect16 centered image'>
+            <img src='./sketches/tiles/distortion free.png' alt="distorted tiles">
+        </div>
+        <div class="inlineSketch">
+            <div class='tileSketch aspectSquare sketch iframe-container'>
+                <iframe src="./sketches/tiles/tiles.html" overflow='hidden' scrolling='no' allowfullscreen
+                    name='tiles'></iframe>
+            </div>
+            <div class='tilesDesc desc'>
+                <h3>Tiles</h3>
+                <p>
+                    One common technique found in generative art is the use of tiles. A programmer can divvy the canvas
+                    into a rows of
+                    tiles, each of which be manipulated independently. Tiling can lead to all kinds of trippy designs
+                    and patterns.
+                </p>
+                <p>
+                    In the design above, I programmed each tile to contain a series of squares. The rotation of the
+                    squares within the tiles
+                    is tied to the x and y axis of the tile's position, which causes the tiles to gradually become more
+                    and more distorted
+                    each time they are drawn.
+                </p>
+                <p>
+                    In the design to the left, the program randomly determines what shape to draw in each tile. Each
+                    tile has a 70% chance
+                    to draw a series of squares, and a 30% chance to draw circles instead. The coloration of each shape
+                    is determined by its
+                    position relative to the rest of the canvas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== PHYLLOTAXIS ==== -->
+    <section class='phyllotaxis inlineSketch'>
+        <div class='phylloDesc desc'>
+            <h3>Phyllotaxis</h3>
+            <p>
+                This piece was made following this <a href="https://www.youtube.com/watch?v=KWoJgHFYWxY&t=1s">excellent
+                    tutorial</a>, with a few variations that I added.
             </p>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore amet quidem sequi ullam quis
-                veniam
-                error, sapiente quas! Veritatis sint officiis rerum non itaque repudiandae voluptates cupiditate ipsum
-                architecto.
+                The program uses a mathematical formula found in nature to create this spiral pattern, known as
+                <i>phyllotaxis</i>.
+                Phyllotaxis can be seen in sunflower petals, in the leaves of succulents, and so on.
             </p>
+        </div>
+        <div>
+            <div class='phylloSketch sketch iframe-container'>
+                <iframe src="./sketches/phyllotaxis/phyllo.html" overflow='hidden' scrolling='no' allowfullscreen
+                    name='phyllotaxis'></iframe>
+            </div>
         </div>
     </section>
 
     <!-- ==== PHYLLOTILES ==== -->
-    <section class=''>
-        <div class='iframe-container'>
-            <iframe src='./sketches/phyllotiles/phyllotiles.html' overflow='hidden' scrolling='no' allowfullscreen>
-            </iframe>
-        </div>
-        <div>
+    <section class='phyllotiles'>
+        <div class='phyllotilesDesc desc'>
             <h3>Phyllotiles</h3>
             <p>
-                what fascinates me about the code is how subtle change in angle makes wildly different patterns
+                Here I combine the two techniques above to further show off the diversity of the phyllotaxis formula.
+                Each spiral is
+                drawn with the same code, but an element of randomness slightly changes the phyllotaxis formula. Simply
+                changing the
+                angle at which the spirals are drawn by a fraction of a degree will create wildly different patterns.
             </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum ducimus maxime aspernatur soluta natus
-                quidem ratione enim voluptatem aliquam voluptas?
-            </p>
+        </div>
+        <div class='phyllotilesSketch aspect16 centered sketch iframe-container'>
+            <iframe src='./sketches/phyllotiles/phyllotiles.html' overflow='hidden' scrolling='no' allowfullscreen
+                name='phyllotiles'>
+            </iframe>
         </div>
     </section>
 
